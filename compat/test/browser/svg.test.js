@@ -81,13 +81,14 @@ describe('svg', () => {
 				markerWidth="value"
 				x1="value"
 				xChannelSelector="value"
+				dominantBaseline="value"
 			/>,
 			scratch
 		);
 
 		expect(serializeHtml(scratch)).to.eql(
 			sortAttributes(
-				'<svg clip-path="value" clip-rule="value" clipPathUnits="value" glyph-orientationhorizontal="value" glyphRef="value" marker-start="value" markerHeight="value" markerUnits="value" markerWidth="value" x1="value" xChannelSelector="value"></svg>'
+				'<svg clip-path="value" clip-rule="value" clipPathUnits="value" dominant-baseline="value" glyph-orientationhorizontal="value" glyphRef="value" marker-start="value" markerHeight="value" markerUnits="value" markerWidth="value" x1="value" xChannelSelector="value"></svg>'
 			)
 		);
 	});
